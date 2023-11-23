@@ -1,0 +1,944 @@
+$primary-color: #001524;
+$second-color: #001524;
+$third-color: #001524;
+$fourth-color: #001524;
+$fifth-color: #001524;
+$sixth-color: #001524;
+$seventh-color: rgba(255, 0, 0, 0.479);
+body {
+  background-color: #001524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    .keyboard-parrent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-family: game-light;
+        font-size: 100px;
+      }
+      .keyboard {
+        border-radius: 20px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        border: 50px solid rgba(0, 0, 0, 0.562);
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        button:hover {
+          background-color: rgba(245, 245, 245, 0.719);
+        }
+        button:active {
+          background-color: red;
+        }
+        .first-key {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .hlping-key1 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 2;
+        }
+        .hlping-key2 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 3;
+        }
+        .hlping-key3 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 4;
+        }
+        .hlping-key4 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 5;
+        }
+        .hlping-key5 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 7;
+        }
+        .hlping-key6 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 8;
+        }
+        .hlping-key7 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 9;
+        }
+        .hlping-key8 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 10;
+        }
+        .hlping-key9 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 12;
+        }
+        .hlping-key10 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 13;
+        }
+        .hlping-key11 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 14;
+        }
+        .hlping-key12 {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 15;
+        }
+        .sleep {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 17;
+        }
+        .wake-up {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 18;
+        }
+        .power {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 1;
+          grid-column: 19;
+        }
+        .wave {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 1;
+        }
+        .one {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 2;
+        }
+        .two {
+          background-color: $primary-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 3;
+        }
+
+        .three {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 4;
+        }
+        .four {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 5;
+        }
+        .five {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 6;
+        }
+        .six {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 7;
+        }
+
+        .seven {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 8;
+        }
+        .eight {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 9;
+        }
+        .nine {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 10;
+        }
+        .zeroo {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 11;
+        }
+        .dash {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 12;
+        }
+        .plus {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 13;
+        }
+        .slash-crooked {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 14;
+        }
+        .arow-left {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 15;
+        }
+        .print {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 17;
+        }
+        .scrolll {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 18;
+        }
+        .pause {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 19;
+        }
+        .num {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 21;
+        }
+
+        .slash {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 22;
+        }
+        .star {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 23;
+        }
+        .dash-number2 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 2;
+          grid-column: 24;
+        }
+        .tab {
+          background-color: $second-color;
+          color: whitesmoke;
+          grid-row: 3;
+          grid-column: 1 / span 2;
+        }
+        .q-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 3;
+        }
+        .w-letter {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 4;
+        }
+        .e-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 5;
+        }
+        .r-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 6;
+        }
+        .t-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 7;
+        }
+        .y-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 8;
+        }
+        .u-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 9;
+        }
+        .i-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 10;
+        }
+        .o-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 11;
+        }
+        .p-letter {
+          background-color: $second-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 12;
+        }
+        .parentheses-right {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 13;
+        }
+        .parentheses-left {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 14;
+        }
+        .insert {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 17;
+        }
+        .home {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 18;
+        }
+        .pg-up {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 19;
+        }
+        .num-7 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 21;
+        }
+        .num-8 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 22;
+        }
+        .num-9 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 3;
+          grid-column: 23;
+        }
+        .plus-number2 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          grid-row: 3 / span 2;
+          grid-column: 24;
+        }
+        .caps {
+          background-color: $third-color;
+          color: whitesmoke;
+          grid-row: 4;
+          grid-column: 1 / span 2;
+        }
+        .a-letter {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 3;
+        }
+        .s-letter {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 4;
+        }
+        .d-letter {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 5;
+        }
+        .f-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 6;
+        }
+        .g-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 7;
+        }
+        .h-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 8;
+        }
+        .j-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          grid-row: 4;
+        }
+        .k-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 10;
+        }
+        .l-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 11;
+        }
+        .strichpunkt {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 12;
+        }
+        .dublle-quotation {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 13;
+        }
+        .enter {
+          background-color: $third-color;
+          color: whitesmoke;
+          grid-row: 4;
+          grid-column: 14 / span 2;
+        }
+        .delete {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 17;
+        }
+        .endd {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 18;
+        }
+        .pg-down {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 19;
+        }
+        .num-4 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 21;
+        }
+        .num-5 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 22;
+        }
+        .num-6 {
+          background-color: $sixth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 4;
+          grid-column: 23;
+        }
+        .shift {
+          background-color: $third-color;
+          color: whitesmoke;
+          grid-row: 5;
+          grid-column: 1 / span 2;
+        }
+        .z-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 3;
+        }
+        .x-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 4;
+        }
+        .c-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 5;
+        }
+        .v-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 6;
+        }
+        .b-letter {
+          background-color: $third-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 7;
+        }
+        .n-letter {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 8;
+        }
+        .m-letter {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 9;
+        }
+        .anfuhrungszeichen-right {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 10;
+        }
+        .anfuhrungszeichen-left {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 11;
+        }
+        .question {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 12;
+        }
+        .shift-number2 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          grid-row: 5;
+          grid-column: 13 / span 3;
+        }
+        .up {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 18;
+        }
+        .num-1 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 21;
+        }
+        .num-2 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 22;
+        }
+        .num-3 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 5;
+          grid-column: 23;
+        }
+        .enter-number2 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          grid-row: 5 / span 2;
+          grid-column: 24;
+        }
+        .ctrl {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 1;
+        }
+        .stone-man {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 2;
+        }
+        .alt {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 3;
+        }
+        .spacee {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          grid-row: 6;
+          grid-column: 4 / span 8;
+        }
+        .alt-number2 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 12;
+        }
+        .microsoft-cat {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 13;
+        }
+        .article {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 14;
+        }
+        .ctrl-number2 {
+          background-color: $fourth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 15;
+        }
+        .leftt {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 17;
+        }
+        .down {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 18;
+        }
+        .rightt {
+          background-color: $seventh-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 19;
+        }
+        .num-0 {
+          background-color: $fifth-color;
+          color: whitesmoke;
+          grid-row: 6;
+          grid-column: 21 / span 2;
+        }
+        .dott {
+          background-color: $fifth-color;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          grid-row: 6;
+          grid-column: 23;
+        }
+        .mid-space {
+          width: 50px;
+          height: 50px;
+          height: 40px;
+        }
+      }
+    }
+
+    .keyboard {
+      background: linear-gradient(
+        270deg,
+        #3c0000,
+        #940000,
+        #ff0000,
+        #ff7e00,
+        #ffd800,
+        #b6ff00,
+        #00ffd4,
+        #0054ff,
+        #8d00ff,
+        #ff00d4
+      );
+      background-size: 2000% 2000%;
+
+      -webkit-animation: AnimationName 11s ease infinite;
+      -moz-animation: AnimationName 11s ease infinite;
+      animation: AnimationName 11s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-moz-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,945 @@
+@font-face {
+  font-family: game;
+  src: url(../fonts/BungeeSpice-Regular.ttf);
+}
+@font-face {
+  font-family: game-light;
+  src: url(../fonts/Foldit-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.keyboard button {
+  font-size: 10px;
+  border: 1px solid red;
+  text-align: center;
+  border-radius: 20px;
+  font-family: game;
+}
+
+body {
+  background-color: #001524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .keyboard-parrent {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .keyboard-parrent h1 {
+  font-family: game-light;
+  font-size: 100px;
+}
+body main .keyboard-parrent .keyboard {
+  border-radius: 20px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  border: 50px solid rgba(0, 0, 0, 0.562);
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .keyboard-parrent .keyboard button:hover {
+  background-color: rgba(245, 245, 245, 0.719);
+}
+body main .keyboard-parrent .keyboard button:active {
+  background-color: red;
+}
+body main .keyboard-parrent .keyboard .first-key {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 1;
+}
+body main .keyboard-parrent .keyboard .hlping-key1 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 2;
+}
+body main .keyboard-parrent .keyboard .hlping-key2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .hlping-key3 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 4;
+}
+body main .keyboard-parrent .keyboard .hlping-key4 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 5;
+}
+body main .keyboard-parrent .keyboard .hlping-key5 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 7;
+}
+body main .keyboard-parrent .keyboard .hlping-key6 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 8;
+}
+body main .keyboard-parrent .keyboard .hlping-key7 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 9;
+}
+body main .keyboard-parrent .keyboard .hlping-key8 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 10;
+}
+body main .keyboard-parrent .keyboard .hlping-key9 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .hlping-key10 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 13;
+}
+body main .keyboard-parrent .keyboard .hlping-key11 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 14;
+}
+body main .keyboard-parrent .keyboard .hlping-key12 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 15;
+}
+body main .keyboard-parrent .keyboard .sleep {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 17;
+}
+body main .keyboard-parrent .keyboard .wake-up {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .power {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 1;
+  grid-column: 19;
+}
+body main .keyboard-parrent .keyboard .wave {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 1;
+}
+body main .keyboard-parrent .keyboard .one {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 2;
+}
+body main .keyboard-parrent .keyboard .two {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .three {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 4;
+}
+body main .keyboard-parrent .keyboard .four {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 5;
+}
+body main .keyboard-parrent .keyboard .five {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 6;
+}
+body main .keyboard-parrent .keyboard .six {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 7;
+}
+body main .keyboard-parrent .keyboard .seven {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 8;
+}
+body main .keyboard-parrent .keyboard .eight {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 9;
+}
+body main .keyboard-parrent .keyboard .nine {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 10;
+}
+body main .keyboard-parrent .keyboard .zeroo {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 11;
+}
+body main .keyboard-parrent .keyboard .dash {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .plus {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 13;
+}
+body main .keyboard-parrent .keyboard .slash-crooked {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 14;
+}
+body main .keyboard-parrent .keyboard .arow-left {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 15;
+}
+body main .keyboard-parrent .keyboard .print {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 17;
+}
+body main .keyboard-parrent .keyboard .scrolll {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .pause {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 19;
+}
+body main .keyboard-parrent .keyboard .num {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 21;
+}
+body main .keyboard-parrent .keyboard .slash {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 22;
+}
+body main .keyboard-parrent .keyboard .star {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 23;
+}
+body main .keyboard-parrent .keyboard .dash-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 2;
+  grid-column: 24;
+}
+body main .keyboard-parrent .keyboard .tab {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 3;
+  grid-column: 1/span 2;
+}
+body main .keyboard-parrent .keyboard .q-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .w-letter {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 4;
+}
+body main .keyboard-parrent .keyboard .e-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 5;
+}
+body main .keyboard-parrent .keyboard .r-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 6;
+}
+body main .keyboard-parrent .keyboard .t-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 7;
+}
+body main .keyboard-parrent .keyboard .y-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 8;
+}
+body main .keyboard-parrent .keyboard .u-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 9;
+}
+body main .keyboard-parrent .keyboard .i-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 10;
+}
+body main .keyboard-parrent .keyboard .o-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 11;
+}
+body main .keyboard-parrent .keyboard .p-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .parentheses-right {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 13;
+}
+body main .keyboard-parrent .keyboard .parentheses-left {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 14;
+}
+body main .keyboard-parrent .keyboard .insert {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 17;
+}
+body main .keyboard-parrent .keyboard .home {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .pg-up {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 19;
+}
+body main .keyboard-parrent .keyboard .num-7 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 21;
+}
+body main .keyboard-parrent .keyboard .num-8 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 22;
+}
+body main .keyboard-parrent .keyboard .num-9 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 3;
+  grid-column: 23;
+}
+body main .keyboard-parrent .keyboard .plus-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  grid-row: 3/span 2;
+  grid-column: 24;
+}
+body main .keyboard-parrent .keyboard .caps {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 4;
+  grid-column: 1/span 2;
+}
+body main .keyboard-parrent .keyboard .a-letter {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .s-letter {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 4;
+}
+body main .keyboard-parrent .keyboard .d-letter {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 5;
+}
+body main .keyboard-parrent .keyboard .f-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 6;
+}
+body main .keyboard-parrent .keyboard .g-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 7;
+}
+body main .keyboard-parrent .keyboard .h-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 8;
+}
+body main .keyboard-parrent .keyboard .j-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 4;
+}
+body main .keyboard-parrent .keyboard .k-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 10;
+}
+body main .keyboard-parrent .keyboard .l-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 11;
+}
+body main .keyboard-parrent .keyboard .strichpunkt {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .dublle-quotation {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 13;
+}
+body main .keyboard-parrent .keyboard .enter {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 4;
+  grid-column: 14/span 2;
+}
+body main .keyboard-parrent .keyboard .delete {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 17;
+}
+body main .keyboard-parrent .keyboard .endd {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .pg-down {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 19;
+}
+body main .keyboard-parrent .keyboard .num-4 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 21;
+}
+body main .keyboard-parrent .keyboard .num-5 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 22;
+}
+body main .keyboard-parrent .keyboard .num-6 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 4;
+  grid-column: 23;
+}
+body main .keyboard-parrent .keyboard .shift {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 5;
+  grid-column: 1/span 2;
+}
+body main .keyboard-parrent .keyboard .z-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .x-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 4;
+}
+body main .keyboard-parrent .keyboard .c-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 5;
+}
+body main .keyboard-parrent .keyboard .v-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 6;
+}
+body main .keyboard-parrent .keyboard .b-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 7;
+}
+body main .keyboard-parrent .keyboard .n-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 8;
+}
+body main .keyboard-parrent .keyboard .m-letter {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 9;
+}
+body main .keyboard-parrent .keyboard .anfuhrungszeichen-right {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 10;
+}
+body main .keyboard-parrent .keyboard .anfuhrungszeichen-left {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 11;
+}
+body main .keyboard-parrent .keyboard .question {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .shift-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 5;
+  grid-column: 13/span 3;
+}
+body main .keyboard-parrent .keyboard .up {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .num-1 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 21;
+}
+body main .keyboard-parrent .keyboard .num-2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 22;
+}
+body main .keyboard-parrent .keyboard .num-3 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 5;
+  grid-column: 23;
+}
+body main .keyboard-parrent .keyboard .enter-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  grid-row: 5/span 2;
+  grid-column: 24;
+}
+body main .keyboard-parrent .keyboard .ctrl {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 1;
+}
+body main .keyboard-parrent .keyboard .stone-man {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 2;
+}
+body main .keyboard-parrent .keyboard .alt {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 3;
+}
+body main .keyboard-parrent .keyboard .spacee {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 6;
+  grid-column: 4/span 8;
+}
+body main .keyboard-parrent .keyboard .alt-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 12;
+}
+body main .keyboard-parrent .keyboard .microsoft-cat {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 13;
+}
+body main .keyboard-parrent .keyboard .article {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 14;
+}
+body main .keyboard-parrent .keyboard .ctrl-number2 {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 15;
+}
+body main .keyboard-parrent .keyboard .leftt {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 17;
+}
+body main .keyboard-parrent .keyboard .down {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 18;
+}
+body main .keyboard-parrent .keyboard .rightt {
+  background-color: rgba(255, 0, 0, 0.479);
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 19;
+}
+body main .keyboard-parrent .keyboard .num-0 {
+  background-color: #001524;
+  color: whitesmoke;
+  grid-row: 6;
+  grid-column: 21/span 2;
+}
+body main .keyboard-parrent .keyboard .dott {
+  background-color: #001524;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  grid-row: 6;
+  grid-column: 23;
+}
+body main .keyboard-parrent .keyboard .mid-space {
+  width: 50px;
+  height: 50px;
+  height: 40px;
+}
+body main .keyboard {
+  background: linear-gradient(270deg, #3c0000, #940000, #ff0000, #ff7e00, #ffd800, #b6ff00, #00ffd4, #0054ff, #8d00ff, #ff00d4);
+  background-size: 2000% 2000%;
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

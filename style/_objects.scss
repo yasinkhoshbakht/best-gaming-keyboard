@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.keyboard {
+  button {
+    font-size: 10px;
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 20px;
+    font-family: game;
+  }
+}
