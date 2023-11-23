@@ -6,6 +6,10 @@
   font-family: game-light;
   src: url(../fonts/Foldit-Regular.ttf);
 }
+@font-face {
+  font-family: regular-roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -25,14 +29,19 @@
   border: 1px solid red;
   text-align: center;
   border-radius: 20px;
-  font-family: game;
+  font-size: 12px;
+  font-family: regular-roboto;
 }
 
 body {
-  background-color: #001524;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body main {
+  background-image: linear-gradient(red, blue, purple);
+  border-radius: 10px;
 }
 body main .keyboard-parrent {
   flex-direction: column;

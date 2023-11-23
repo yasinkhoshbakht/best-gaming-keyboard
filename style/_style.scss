@@ -6,12 +6,15 @@ $fifth-color: #001524;
 $sixth-color: #001524;
 $seventh-color: rgba(255, 0, 0, 0.479);
 body {
-  background-color: #001524;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 
   main {
+    background-image: linear-gradient(red,blue,purple);
+    border-radius: 10px;
+
     .keyboard-parrent {
       flex-direction: column;
       justify-content: center;
